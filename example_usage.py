@@ -1,8 +1,9 @@
-from mask_detector import MaskDetector
+from mask_detector import MaskDetectorWrapper
+import os
 
-detector = MaskDetector()
+wrapper = MaskDetectorWrapper()
 
-image_path = "test_image/with_mask_5.jpg"
-result = detector.predict(image_path)
+image_path = os.path.join('test_image', 'with_mask_5.jpg')
+result = wrapper.predict(image_path)
 
 print(f"Prediction for {image_path}: {result}")

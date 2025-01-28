@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: mask_detector
+Version: 1.0
+Summary: A Python library for detecting whether a person is wearing a mask using a pre-trained CNN model.
+Home-page: https://github.com/FarisAnsara/FaceMaskDetectorLibrary
+Author: Faris Ansara
+Author-email: faris.ansara@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: tensorflow
+Requires-Dist: numpy
+Requires-Dist: pillow

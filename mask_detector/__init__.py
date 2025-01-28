@@ -1,1 +1,1 @@
-from .MaskDetector import MaskDetector
+from .MaskDetectorWrapper import MaskDetectorWrapper

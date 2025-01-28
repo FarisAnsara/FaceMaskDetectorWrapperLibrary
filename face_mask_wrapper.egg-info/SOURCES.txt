@@ -1,0 +1,11 @@
+README.md
+setup.py
+face_mask_wrapper.egg-info/PKG-INFO
+face_mask_wrapper.egg-info/SOURCES.txt
+face_mask_wrapper.egg-info/dependency_links.txt
+face_mask_wrapper.egg-info/requires.txt
+face_mask_wrapper.egg-info/top_level.txt
+mask_detector/MaskDetector.py
+mask_detector/MaskDetectorWrapper.py
+mask_detector/__init__.py
+mask_detector/mask_detector_model.h5
