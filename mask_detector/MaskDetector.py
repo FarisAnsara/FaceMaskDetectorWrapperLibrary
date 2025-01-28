@@ -2,6 +2,7 @@ import tensorflow as tf
 import numpy as np
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
 import os
+from PIL import Image, UnidentifiedImageError
 
 class MaskDetector:
     def __init__(self, model_path='mask_detector_model.h5'):
@@ -31,6 +32,10 @@ class MaskDetector:
         """
         if not os.path.exists(image_path):
             raise FileNotFoundError(f"Image file not found at: {image_path}")
+        try:
+            Image.open(image_path).verify()
+        except UnidentifiedImageError:
+            raise ValueError(f"The file '{image_path}' is not a valid image file.")
         image = load_img(image_path, target_size=target_size)
         image_array = img_to_array(image) / 255.0
         image_array = np.expand_dims(image_array, axis=0)

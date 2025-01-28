@@ -31,7 +31,7 @@ This will install the library on your system, allowing you to use it in any Pyth
 - **Python Version**:
   - This library has been **tested** on Python **3.10**, **3.11**, and **3.12**.
   - It is also expected to be compatible with **Python 3.9** based on TensorFlow’s requirements.
-  - Ensure you have Python 3.9 or higher installed for compatibility.
+  - Ensure you have Python 3.9 or higher installed for optimal compatibility.
 
 ---
 
